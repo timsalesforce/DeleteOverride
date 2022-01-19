@@ -1,0 +1,10 @@
+<aura:component implements="lightning:actionOverride,force:hasRecordId,force:hasSObjectName">
+    <lightning:navigation aura:id="navService"/>
+    <lightning:recordEditForm aura:id="recordEditForm"
+                           onsuccess="{!c.handleOnSuccess}"
+                           objectApiName="Contact">
+        <lightning:messages />
+        <lightning:inputField fieldName="Name" />
+        <lightning:button class="slds-m-top_small" type="submit" label="Create new"/>
+    </lightning:recordEditForm>
+</aura:component>	
